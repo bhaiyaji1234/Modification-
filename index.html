@@ -1,45 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-  .menu-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  .menu-button {
-    background: transparent;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-  }
-  .menu-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    margin-top: 5px;
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    min-width: 180px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-  }
-  .menu-dropdown a {
-    display: block;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid #eee;
-  }
-  .menu-dropdown a:last-child {
-    border-bottom: none;
-  }
-  .menu-dropdown a:hover {
-    background: #f0f0f0;
-  }
-  </style>
-  
 <meta charset="utf-8">
 <title>Bhaiya Ji Auto Parts | Raisen Bike Service & Genuine Parts</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -72,17 +33,7 @@ body{
   line-height:1.6;
   overflow-x:hidden;
 }
-  <div class="menu-container">
-  <button class="menu-button" onclick="toggleMenu()">☰</button>
-  <div class="menu-dropdown" id="menu">
-    <a href="#accessories">Accessories</a>
-    <a href="#oils">Engine Oils</a>
-    <a href="#indianrevolt">Indian Revolt</a>
-    <a href="#mechanics">Skilled Mechanics</a>
-    <a href="#privacy">Privacy Policy</a>
-  </div>
-</div>
- 
+  
 /* Hero Section */
 .hero{
   min-height:80vh;
@@ -126,19 +77,6 @@ body{
   filter:brightness(1.1);
   transform:scale(1.05);
 }
-  <script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-  }
-  // Click outside to close menu
-  window.addEventListener("click", function(e) {
-    if (!e.target.matches('.menu-button')) {
-      const menu = document.getElementById("menu");
-      if (menu) menu.style.display = "none";
-    }
-  });
-</script>
 
 /* Sections */
 .section{
