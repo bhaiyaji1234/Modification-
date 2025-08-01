@@ -65,13 +65,7 @@
   --max-w:1200px;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-body{
-  font-family:'Poppins',sans-serif;
-  background:var(--bg-0);
-  color:var(--txt-main);
-  line-height:1.6;
-  overflow-x:hidden;
-}
+body
   <div class="menu-container">
   <button class="menu-button" onclick="toggleMenu()">☰</button>
   <div class="menu-dropdown" id="menu">
@@ -82,6 +76,27 @@ body{
     <a href="#privacy">Privacy Policy</a>
   </div>
 </div>
+  {
+  font-family:'Poppins',sans-serif;
+  background:var(--bg-0);
+  color:var(--txt-main);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
+  // Click outside to close menu
+  window.addEventListener("click", function(e) {
+    if (!e.target.matches('.menu-button')) {
+      const menu = document.getElementById("menu");
+      if (menu) menu.style.display = "none";
+    }
+  });
+</script>
+      
   
 /* Hero Section */
 .hero{
@@ -226,21 +241,7 @@ body{
 .contact-block button:hover{
   filter:brightness(1.1);
 }
-  <script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-  }
-  // Click outside to close menu
-  window.addEventListener("click", function(e) {
-    if (!e.target.matches('.menu-button')) {
-      const menu = document.getElementById("menu");
-      if (menu) menu.style.display = "none";
-    }
-  });
-</script>
-    
-
+   
 /* ===== Map ===== */
 .map-embed{margin-top:28px;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-1);}
 .map-embed iframe{width:100%;height:360px;border:0;display:block;}
