@@ -82,22 +82,9 @@ body
   color:var(--txt-main);
   line-height:1.6;
   overflow-x:hidden;
-}
-  <script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
   }
-  // Click outside to close menu
-  window.addEventListener("click", function(e) {
-    if (!e.target.matches('.menu-button')) {
-      const menu = document.getElementById("menu");
-      if (menu) menu.style.display = "none";
-    }
-  });
-</script>
       
-  
+ 
 /* Hero Section */
 .hero{
   min-height:80vh;
@@ -141,6 +128,19 @@ body
   filter:brightness(1.1);
   transform:scale(1.05);
 }
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
+  // Click outside to close menu
+  window.addEventListener("click", function(e) {
+    if (!e.target.matches('.menu-button')) {
+      const menu = document.getElementById("menu");
+      if (menu) menu.style.display = "none";
+    }
+  });
+</script>
 
 /* Sections */
 .section{
