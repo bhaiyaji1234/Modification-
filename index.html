@@ -1,107 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Bhaiya Ji Auto Parts | Raisen Bike Service & Genuine Parts</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Bhaiya Ji Auto Parts – Raisen में Bike Service, Genuine Parts, Engine Oil, Accessories, Puncture Repair & Custom Mods. Call +91 7489351044.">
-<meta name="keywords" content="Bhaiya Ji Auto Parts,Raisen bike service,engine oil,auto parts,accessories,puncture repair,Revolt parts,mechanic">
-<meta name="theme-color" content="#457B9D">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhaiya Ji Auto Parts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<header>
+  <h1>BHAIYA JI AUTO PARTS</h1>
+  <nav>
+    <a href="#products">Shop</a>
+    <a href="#about">About</a>
+    <a href="#visit">Visit Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-<style>
-:root{
-  --accent1:#ff8800;
-  --accent2:#00ff9d;
-  --accent3:#ffd54f;
-  --bg-0:#0e0e0e;
-  --bg-1:#1b1b1b;
-  --txt-main:#f5f5f5;
-  --txt-sub:#bdbdbd;
-  --radius-lg:16px;
-  --shadow-glow:0 0 15px rgba(255,136,0,.6);
-  --trans:.25s;
-  --max-w:1200px;
-}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{
-  font-family:'Poppins',sans-serif;
-  background:var(--bg-0);
-  color:var(--txt-main);
-  line-height:1.6;
-  overflow-x:hidden;
-}
-  
-/* Hero Section */
-.hero{
-  min-height:80vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  background:
-    linear-gradient(135deg,rgba(255,136,0,0.3),rgba(0,0,0,0.9)),
-    url('https://github.com/bhaiyaji1234/Modification-.git') center/cover no-repeat;
-  padding:20px;
-}
-.hero img{
-  width:120px;
-  height:auto;
-  border-radius:50%;
-  box-shadow:var(--shadow-glow);
-  margin-bottom:15px;
-}
-.hero h1{
-  font-size:clamp(2.2rem,6vw,3.5rem);
-  font-weight:700;
-  text-shadow:0 3px 12px rgba(0,0,0,0.8);
-}
-.hero p{
-  font-size:1.2rem;
-  margin-top:10px;
-}
-.hero .call-btn{
-  margin-top:25px;
-  padding:14px 28px;
-  background:var(--accent1);
-  color:#000;
-  font-weight:700;
-  border-radius:50px;
-  text-decoration:none;
-  transition:var(--trans);
-}
-.hero .call-btn:hover{
-  filter:brightness(1.1);
-  transform:scale(1.05);
-}
+<section class="hero">
+  <h2>Top-Quality Auto Parts, Desi Rates!</h2>
+  <p>Online shop karo ya dukaan pe aa jao, Bhaiya Ji sab sambhaal lega.</p>
+  <a href="#products" class="btn">Shop Now</a>
+</section>
 
-/* Sections */
-.section{
-  max-width:var(--max-w);
-  margin:80px auto;
-  padding:0 20px;
-}
-.section h2{
-  text-align:center;
-  color:var(--accent1);
-  font-size:2rem;
-}
-.section .section-line{
-  width:80px;
-  height:4px;
-  background:var(--accent2);
-  margin:12px auto 32px;
-  border-radius:2px;
-  box-shadow:var(--shadow-glow);
-}
+<section id="products">
+  <h2>Popular Products</h2>
+  <div class="product-list">
+    <!-- Dynamically populated from JS -->
+  </div>
+</section>
 
-/* Cards & Products */
-.grid-cards,
-.grid-products{
-  display:grid;
+<section id="about">
+  <h2>About Bhaiya Ji</h2>
+  <p>25 saal se bharosa aur quality. Hamara target: Desi rates, imported parts.</p>
+</section>
+
+<section id="visit">
+  <h2>Visit Our Store</h2>
+  <p>🗺️ 22, Auto Market, Karol Bagh, Delhi</p>
+  <iframe src="https://maps.google.com/?q=Karol+Bagh+Auto+Market&output=embed" width="100%" height="250"></iframe>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📞 9876543210 | 📱 <a href="https://wa.me/919876543210">WhatsApp</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Bhaiya Ji Auto Parts</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:24px;
 }
